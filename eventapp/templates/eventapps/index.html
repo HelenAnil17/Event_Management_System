@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Management Website</title>
+    <link rel="stylesheet" href="{% static '/style.css' %}">
+</head>
+<style>
+    body {
+      background-image: url('static/bg.png');
+      background-size: cover;
+    }
+    </style>
+<body>
+    <header>
+        <div class="hg1">
+        <img src="static/logoo.png" height="200px" width="250px" alt="Zenith:To imagine and fulfil anything"/>
+        <div>
+        <!--h2>Zenith:To imagine and fulfil anything</h2-->
+        </div>
+        </div>
+        <h2>Zenith : To dream big</h2>
+        <div>
+            <nav>
+            <a class="nav-link" href="">Home</a>
+            <a class="nav-link" href="">Login</a>
+            <a class="nav-link" href="">Registeration</a>
+        </nav>
+        </div>
+    </header>
+    <section class="events">
+        {% for event in events %}
+    <div class="events_card">
+        <h2>{{event.event_title}}</h2>
+        <p>Location : {{event.location}}</p>
+        <p>Date : {{event.date}}</p>
+        <a href="{% url 'eventdetail' event.pk %}" class="events-btn">Event Details</a>
+    </div>
+    {% endfor %}
+    <!--div class="events_card">
+        <h2>Event Name</h2>
+        <p>Event Location</p>
+        <p>Event Date</p>
+        <a href="./event.html" class="events-btn">Event Details</a>
+    </div>
+    <div class="events_card">
+        <h2>Event Name</h2>
+        <p>Event Location</p>
+        <p>Event Date</p>
+        <a href="./event.html" class="events-btn">Event Details</a>
+    </div-->
+    </section>
+    <footer>Online Registeration System @ 2023</footer>
+</body>
+</html>

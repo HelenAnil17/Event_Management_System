@@ -1,0 +1,126 @@
+h2{
+    color: #eda113;
+    font-size: "50px";
+    text-align: center;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: black;
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+nav{
+    display: flex;
+    gap: 20px;
+}
+
+.nav-link:hover{
+    background-color: #eda113;
+}
+.nav-link{
+    color: white;
+    border: 1px solid rgb(63, 63, 63);
+    box-shadow: 0 6px 8px rgb(63, 63, 63);
+    padding: 10px;
+    border: radius 5px; 
+    text-decoration: none;
+
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+}
+
+.events{
+    align-items: center;
+    padding: 80px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.events_card{
+    text-align: center;
+    box-shadow: 0 6px 8px rgb(244, 208, 64) ;
+    padding: 30px;
+    border-radius: 10px;
+    width: 250px;
+    color:white;
+    background-color: rgba(6, 6, 6, 0.566);
+    background-size: cover;
+  
+
+}
+h3{
+    color: #eda113;
+    text-align: center;
+}
+
+.events-btn{
+    border: 0 solid darkgoldenrod;
+    border-radius: 5px;
+    padding: 5px;
+    text-decoration: none;
+    color: #eda113;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-shadow: 0 6px 8px rgb(237, 161, 48);
+}   
+
+#event-details{
+    align-items: center;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    color: white;
+}
+
+.event{
+    text-align: left;
+    box-shadow: 0 6px 8px rgb(244, 208, 64) ;
+    padding: 20px;
+    margin-top: 0.5px;
+    border-radius: 10px;
+    width: 300px;
+    background-color: rgba(6, 6, 6, 0.566);
+    background-size: cover;
+  
+}
+
+input[type=submit]{
+    border: 0 solid darkgoldenrod;
+    border-radius: 5px;
+    padding: 10px;
+    text-decoration: none;
+    color: #fefdfa;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   box-shadow: 0 6px 8px rgb(61, 61, 61);
+    margin: 2px;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(6, 6, 6, 0.566);
+    cursor: pointer;
+
+}
+
+
+
+form {
+    max-width: 500px; 
+    margin: 0 auto;   
+    
+  }
+  

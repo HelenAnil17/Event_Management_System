@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/event.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Details Page</title>
+    
+<link rel="stylesheet" href="./Event Details Page_files/style.css"></head>
+<body>
+    <header>
+        <div class="hg1">
+        <img src="./Event Details Page_files/logoo.png" height="200px" width="250px" alt="Zenith:To imagine and fulfil anything">
+        <div>
+        <!--h2>Zenith:To imagine and fulfil anything</h2-->
+        </div>
+        </div>
+        <h2>Zenith : To dream big</h2>
+        <div>
+            <nav>
+            <a class="nav-link" href="http://127.0.0.1:5500/event.html">Home</a>
+            <a class="nav-link" href="http://127.0.0.1:5500/event.html">Login</a>
+            <a class="nav-link" href="http://127.0.0.1:5500/event.html">Registeration</a>
+        </nav>
+        </div>
+    </header>
+    <!--section class="events">
+    <div class="events_card">
+        <h2>Event Name</h2>
+        <p>Event Location</p>
+        <p>Event Date</p>
+        <a href="./event.html" class="events-btn">Event Details</a>
+    </div>
+    <div class="events_card">
+        <h2>Event Name</h2>
+        <p>Event Location</p>
+        <p>Event Date</p>
+        <a href="./event.html" class="events-btn">Event Details</a>
+    </div>
+    <div class="events_card">
+        <h2>Event Name</h2>
+        <p>Event Location</p>
+        <p>Event Date</p>
+        <a href="./event.html" class="events-btn">Event Details</a>
+    </div>
+    </section-->
+     <section id="event-details">
+        <div class="event">
+        <h2 class="event-title">Cyber Security</h2><br>
+        <p class="event-date">Date : <b>30 September 2023</b></p>
+        <p class="event-loc">Location : <b>FISAT</b></p>
+        <p class="event-desc">Description : This is a free workshop on Cyber Security organised by <b>CSE department,FISAT</b> </p>
+        <form action="http://127.0.0.1:5500/event.html">
+             <h3>Apply for this event</h3>
+            <label for="fullname">Full Name :</label>
+            <input type="text" name="fullname"><br><br>
+            <label for="email">E-mail :</label>
+            <input type="email" name="email"><br><br>
+            <label for="phone">Phone :</label>
+            <input type="number" name="phone"><br><br>
+            <input type="submit" value="Apply">
+        </form>
+        </div>
+     </section>
+    <footer>Online Registeration System @ 2023</footer>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
